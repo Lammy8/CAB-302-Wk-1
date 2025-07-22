@@ -20,6 +20,7 @@ import java.util.Scanner;
 
 
 public class Main {
+    
 
     private final static String SHAPE_NUMBER = "Enter the number of shapes to create -> ";
     private final static String NUMBER_OF_POINTS = "Enter the number of points to create -> ";

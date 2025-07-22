@@ -8,8 +8,8 @@ package shapes;
  * contains 3 vertices
  */
 
-public class EquilateralTriangle  {
-
+public class EquilateralTriangle extends Shape2D {
+    private double sideLength;
 
 
     /**
@@ -19,9 +19,35 @@ public class EquilateralTriangle  {
     */
     public EquilateralTriangle(Point centre, double sideLength) {
 
+
     }
 
 
+    @Override
+    public double getArea() {
 
+        double area = (Math.sqrt(3) / 4) * Math.pow(sideLength, 2);
+        return area;
 
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 0;
+    }
+
+    @Override
+    public Point[] GetVertices() {
+        return new Point[0];
+    }
+
+    @Override
+    public void translate(double x, double y) {
+
+    }
+
+    @Override
+    public boolean containsPoint(Point point) {
+        return false;
+    }
 }
